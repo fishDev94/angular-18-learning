@@ -1,0 +1,12 @@
+
+<main>
+    <h1>Home page</h1>
+    <p>One Counter</p>
+    <app-button [customStyle]="{
+        backgroundColor: '#5e92ca', color: 'white'}" (testClick)="handleButtonClick()" text="Increment" />
+    <p>{{ value }}</p>
+
+        <p>from store: {{ count$ | async }}</p>
+    <app-button [customStyle]="{
+        backgroundColor: '#aa6c6c', color: 'white'}" (testClick)="handleButtonClick('decrement')" text="Decrement" />
+</main>
